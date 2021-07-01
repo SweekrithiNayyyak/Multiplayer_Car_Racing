@@ -53,6 +53,7 @@ play(){
     //textSize(30);
     //text("Game Start", 120, 100)
     Player.getPlayerInfo();
+    player.getCarsAtEnd();
 
     if(allPlayers !== undefined){
     //  var display_position = 130;
@@ -89,10 +90,13 @@ if(index===player.index){
     }
   if(player.distance>3860){
     gameState=2;
+    player.rank+=1;
+    Player.updateCarsAtEnd(player.rank)
   
   }
 }
 end(){
   console.log("game has ended");
+  console.log(player.rank)
 }
 }
