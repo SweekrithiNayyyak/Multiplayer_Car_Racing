@@ -8,7 +8,9 @@ var car1,car2,car3,car4;
 var cars=[];
 var car1Image,car2Image,car3Image,car4Image
 var trackImage,groundImage;
-
+//comments
+//comments
+//comments
 function preload(){
     car1Image=loadImage("../images/car1.png");
     car2Image=loadImage("../images/car2.png");
